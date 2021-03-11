@@ -1,0 +1,15 @@
+Options +FollowSymLinks
+IndexIgnore */*
+php_value upload_max_filesize 10M
+php_value post_max_size 20M
+php_value memory_limit 1000M
+Header always set Access-Control-Allow-Origin "*"
+Header always set Access-Control-Allow-Methods "POST, GET, OPTIONS, DELETE, PUT"
+Header always set Access-Control-Max-Age "1000"
+Header always set Access-Control-Allow-Headers "x-requested-with, Content-Type, origin, authorization, accept, client-security-token"
+RewriteEngine on
+RewriteCond %{REQUEST_METHOD} OPTIONS
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ $1 [R=200,L] 
+RewriteRule . index.php

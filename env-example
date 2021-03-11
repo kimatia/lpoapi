@@ -1,0 +1,7 @@
+API_HOST=127.0.0.1:8888/api-yii2-boilerplate/web
+APP_ENV=development
+
+MYSQL_HOST=127.0.0.1
+MYSQL_DATABASE= drozoneApi
+MYSQL_USER= dan
+MYSQL_PASSWORD= root

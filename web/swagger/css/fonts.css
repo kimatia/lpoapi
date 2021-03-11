@@ -1,0 +1,11 @@
+@font-face {
+    font-family: cheque;
+    src: url(http://www.api.co.ke/swagger/fonts/micr-encoding.regular.ttf);
+}
+.cheque {
+    text-align:center;
+    font-family: cheque, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    color:#000;
+    font-size: 150px;
+    
+}
